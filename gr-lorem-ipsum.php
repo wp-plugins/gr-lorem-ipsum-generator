@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: GR Lorem Ipsum Generator
-Plugin URI: http://grandrapidsweb.com
+Plugin URI: http://wordpress.org/plugins/gr-lorem-ipsum-generator/
 Description: Generates one or more randomly selected paragraphs of Lorem Ipsum text from shortcode. Use shortcode [lorem] for one paragraph. Or add para= X to generate X number of paragraphs. Example [lorem para=3] for 3 paragraphs.
-Version: 1.0
+Version: 1.1
 Author: John Wierenga
-Author URI: http://grandrapidsweb.com/
+Author URI: http://twitter.com/jwiere03
 
 /*  Copyright 2014 John Wierenga (email : john@grandrapidsweb.com)
 
@@ -28,7 +28,7 @@ function gr_sc_lorem_function($gr_sc_lorem_gratts) {
       'para' => 1,
    ), $gr_sc_lorem_gratts));
    $gr_sc_lorem_gr_sc_lorem_loop = 1;
-   $gr_sc_lorem_imsum;
+   $gr_sc_lorem_imsum=null;
 while ($gr_sc_lorem_gr_sc_lorem_loop <= $para) {
 $gr_sc_lorem_num =rand ( 1 , 10 );
 if ($gr_sc_lorem_num == 1)
