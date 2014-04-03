@@ -3,7 +3,7 @@
 Plugin Name: GR Lorem Ipsum Generator
 Plugin URI: http://wordpress.org/plugins/gr-lorem-ipsum-generator/
 Description: Generates one or more randomly selected paragraphs of Lorem Ipsum text from shortcode. Use shortcode [lorem] for one paragraph. Or add para= X to generate X number of paragraphs. Example [lorem para=3] for 3 paragraphs.
-Version: 1.1
+Version: 1.2
 Author: John Wierenga
 Author URI: http://twitter.com/jwiere03
 
@@ -30,7 +30,7 @@ function gr_sc_lorem_function($gr_sc_lorem_gratts) {
    $gr_sc_lorem_gr_sc_lorem_loop = 1;
    $gr_sc_lorem_imsum=null;
 while ($gr_sc_lorem_gr_sc_lorem_loop <= $para) {
-$gr_sc_lorem_num =rand ( 1 , 10 );
+$gr_sc_lorem_num =rand ( 1 , 12 );
 if ($gr_sc_lorem_num == 1)
 {
 $gr_sc_lorem_imsum .= "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nulla vitae lacus mattis volutpat eu at sapien. Nunc interdum congue libero, quis laoreet elit sagittis ut. Pellentesque lacus erat, dictum condimentum pharetra vel, malesuada volutpat risus. Nunc sit amet risus dolor. Etiam posuere tellus nisl. Integer lorem ligula, tempor eu laoreet ac, eleifend quis diam. Proin cursus, nibh eu vehicula varius, lacus elit eleifend elit, eget commodo ante felis at neque. Integer sit amet justo sed elit porta convallis a at metus. Suspendisse molestie turpis pulvinar nisl tincidunt quis fringilla enim lobortis. Curabitur placerat quam ac sem venenatis blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sed ligula nisl. Nam ullamcorper elit id magna hendrerit sit amet dignissim elit sodales. Aenean accumsan consectetur rutrum.</p>";
@@ -70,6 +70,14 @@ $gr_sc_lorem_imsum .= "<p>Phasellus feugiat odio ac eros volutpat tempor. Cras e
 else if ($gr_sc_lorem_num == 10)
 {
 $gr_sc_lorem_imsum .= "<p>Duis nec pretium velit, id hendrerit urna. Ut vulputate dolor id nulla vestibulum gravida. Maecenas massa risus, dapibus in faucibus at, scelerisque et velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut tincidunt erat libero, at sollicitudin nisl porta eget. Curabitur id nibh sit amet nibh lacinia tincidunt et in mi. Nam ornare malesuada porta. Nullam vitae purus quis purus molestie porttitor eu et nisi.</p>";
+}
+else if ($gr_sc_lorem_num == 11)
+{
+$gr_sc_lorem_imsum .= "<p>Nullam ultrices lorem turpis, id scelerisque lorem commodo vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eu nulla nisl. Maecenas hendrerit neque eget tortor sodales eleifend. Morbi pharetra ultricies tortor, eu pellentesque lorem lobortis sit amet. Pellentesque facilisis urna sed nisl volutpat, in cursus lorem aliquam. Nam quis erat magna. Sed quam tellus, gravida vel fermentum ultricies, adipiscing at lorem.</p>";
+}
+else if ($gr_sc_lorem_num == 12)
+{
+$gr_sc_lorem_imsum .= "<p>Quisque eu interdum lacus. Aenean eget turpis ac elit pharetra scelerisque vel quis diam. Etiam eleifend vulputate interdum. In vel nisl tellus. Sed euismod ipsum sit amet enim sollicitudin laoreet. Vestibulum ac adipiscing mi, sit amet sollicitudin elit. In eget volutpat nisi. Mauris id euismod eros. Maecenas pretium augue nulla, quis pharetra metus rhoncus eget. Vivamus ut felis eu orci lobortis convallis. Quisque id ornare lacus, at dapibus arcu. In et pharetra nibh, semper vulputate sem.</p>";
 }
 $gr_sc_lorem_gr_sc_lorem_loop++;
 }
