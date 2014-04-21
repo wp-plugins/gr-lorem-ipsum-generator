@@ -2,7 +2,7 @@
 Contributors: Jwiere03
 Tags: plugin, placeholder, text, lorem, ipsum
 Requires at least: 3.0
-Tested up to: 3.8.1
+Tested up to: 3.9
 License: GNU General Public License
 
 Generates one or more randomly selected paragraphs of Lorem Ipsum text from shortcode.
