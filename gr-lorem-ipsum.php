@@ -3,9 +3,9 @@
 Plugin Name: GR Lorem Ipsum Generator
 Plugin URI: http://wordpress.org/plugins/gr-lorem-ipsum-generator/
 Description: Generates one or more randomly selected paragraphs of Lorem Ipsum text from shortcode. Use shortcode [lorem] for one paragraph. Or add para= X to generate X number of paragraphs. Example [lorem para=3] for 3 paragraphs.
-Version: 1.2
+Version: 2.0
 Author: John Wierenga
-Author URI: http://twitter.com/jwiere03
+Author URI: http://johnewierenga.com
 
 /*  Copyright 2014 John Wierenga (email : john@grandrapidsweb.com)
 
@@ -30,7 +30,7 @@ function gr_sc_lorem_function($gr_sc_lorem_gratts) {
    $gr_sc_lorem_gr_sc_lorem_loop = 1;
    $gr_sc_lorem_imsum=null;
 while ($gr_sc_lorem_gr_sc_lorem_loop <= $para) {
-$gr_sc_lorem_num =rand ( 1 , 12 );
+$gr_sc_lorem_num =rand ( 1 , 15 );
 if ($gr_sc_lorem_num == 1)
 {
 $gr_sc_lorem_imsum .= "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nulla vitae lacus mattis volutpat eu at sapien. Nunc interdum congue libero, quis laoreet elit sagittis ut. Pellentesque lacus erat, dictum condimentum pharetra vel, malesuada volutpat risus. Nunc sit amet risus dolor. Etiam posuere tellus nisl. Integer lorem ligula, tempor eu laoreet ac, eleifend quis diam. Proin cursus, nibh eu vehicula varius, lacus elit eleifend elit, eget commodo ante felis at neque. Integer sit amet justo sed elit porta convallis a at metus. Suspendisse molestie turpis pulvinar nisl tincidunt quis fringilla enim lobortis. Curabitur placerat quam ac sem venenatis blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sed ligula nisl. Nam ullamcorper elit id magna hendrerit sit amet dignissim elit sodales. Aenean accumsan consectetur rutrum.</p>";
@@ -78,6 +78,18 @@ $gr_sc_lorem_imsum .= "<p>Nullam ultrices lorem turpis, id scelerisque lorem com
 else if ($gr_sc_lorem_num == 12)
 {
 $gr_sc_lorem_imsum .= "<p>Quisque eu interdum lacus. Aenean eget turpis ac elit pharetra scelerisque vel quis diam. Etiam eleifend vulputate interdum. In vel nisl tellus. Sed euismod ipsum sit amet enim sollicitudin laoreet. Vestibulum ac adipiscing mi, sit amet sollicitudin elit. In eget volutpat nisi. Mauris id euismod eros. Maecenas pretium augue nulla, quis pharetra metus rhoncus eget. Vivamus ut felis eu orci lobortis convallis. Quisque id ornare lacus, at dapibus arcu. In et pharetra nibh, semper vulputate sem.</p>";
+}
+else if ($gr_sc_lorem_num == 13)
+{
+$gr_sc_lorem_imsum .= "<p>Aliquam sodales lorem nec pretium aliquam. Nam in tempus elit. Nunc gravida nunc at lacinia iaculis. Nulla porta tortor id dolor iaculis euismod. Vestibulum rutrum feugiat mollis. Duis condimentum lacus sed pharetra condimentum. Nulla vitae porttitor nunc. Curabitur sit amet quam tellus. Suspendisse suscipit ipsum nec varius lobortis. Nunc laoreet, ipsum nec porttitor mollis, neque sem mollis odio, id molestie eros erat vel enim.</p>";
+}
+else if ($gr_sc_lorem_num == 14)
+{
+$gr_sc_lorem_imsum .= "<p>Nunc porta blandit aliquam. Aliquam molestie vel sem id aliquet. Etiam cursus dignissim leo in egestas. Morbi rutrum pharetra magna ac rhoncus. Proin urna ligula, dapibus quis venenatis in, varius a purus. Mauris tincidunt non ligula ac volutpat. Nulla augue arcu, euismod in elementum vel, ultricies sit amet felis. Suspendisse ac ligula eu libero vulputate gravida. Etiam venenatis suscipit auctor.</p>";
+}
+else if ($gr_sc_lorem_num == 15)
+{
+$gr_sc_lorem_imsum .= "<p>Pellentesque tincidunt arcu a urna ullamcorper, id malesuada justo porttitor. Vestibulum eu aliquet orci. Mauris tellus nulla, pellentesque ut metus sed, dignissim consequat quam. Nunc luctus, nulla sed tempor congue, ante lectus sollicitudin ante, a malesuada felis nisl eu mauris. Aenean velit lorem, pellentesque quis volutpat non, lacinia vel velit. Vivamus imperdiet felis faucibus augue semper, sed auctor quam ornare. Quisque tortor enim, mattis eu lobortis laoreet, varius fermentum enim. Ut mattis quis sapien eget imperdiet. Etiam sed consectetur mauris. Ut scelerisque mollis erat, interdum semper lorem malesuada vitae. Mauris nisl tellus, cursus eu libero et, congue commodo velit. Praesent mollis ultrices tincidunt. Cras eleifend ante id mauris pulvinar, sit amet interdum nunc convallis. In ante metus, consequat ut ligula sit amet, imperdiet ornare justo.</p>";
 }
 $gr_sc_lorem_gr_sc_lorem_loop++;
 }
